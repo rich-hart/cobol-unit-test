@@ -14,12 +14,14 @@
        PROCEDURE DIVISION.
 
        2000-SPEAK.
+           READY TRACE
            IF WS-MESSAGE-TYPE IS EQUAL TO 'GREETING'
                MOVE 'HELLO, WORLD!' TO WS-MESSAGE
            END-IF  
            IF WS-MESSAGE-TYPE IS EQUAL TO 'FAREWELL'
                MOVE 'SEE YOU LATER, ALLIGATOR!' TO WS-MESSAGE  
-           END-IF    
+           END-IF
+           RESET TRACE
            .    
 
        9999-END.

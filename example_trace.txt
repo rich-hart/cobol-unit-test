@@ -1,0 +1,33 @@
+==================================================
+Running: ./run-ut SAMPLEC SAMPLE SAMPLET
+./src/main/cobol/copy/ZUTZCWS.CPY: 100: warning: line not terminated by a newline
+./src/test/cobol/TESTPRG.CBL: in paragraph 'UT-LOOKUP-FILE':
+./src/test/cobol/TESTPRG.CBL: 53: warning: ignoring redundant .
+./src/test/cobol/TESTPRG.CBL: in paragraph 'UT-BEFORE':
+./src/test/cobol/TESTPRG.CBL: 54: warning: ignoring redundant .
+./src/test/cobol/TESTPRG.CBL: in paragraph 'UT-INITIALIZE':
+./src/test/cobol/TESTPRG.CBL: 59: warning: ignoring redundant .
+./src/test/cobol/TESTPRG.CBL: in paragraph '2000-SPEAK':
+./src/test/cobol/TESTPRG.CBL: 72: warning: ignoring redundant .
+ 
+TEST SUITE:
+GREETING AND FAREWELL (FAREWELL WILL FAIL)
+ 
+Source :    './src/test/cobol/TESTPRG.CBL'
+Program-Id: SAMPLE           Statement: IF                     Line: 62
+Program-Id: SAMPLE           Statement: MOVE                   Line: 63
+Program-Id: SAMPLE           Statement: IF                     Line: 65
+Program-Id: SAMPLE           Statement: RESET TRACE            Line: 68
+     PASS:   1. IT RETURNS HELLO, WORLD! AS GREETING                                            
+Program-Id: SAMPLE           Statement: IF                     Line: 62
+Program-Id: SAMPLE           Statement: IF                     Line: 65
+Program-Id: SAMPLE           Statement: MOVE                   Line: 66
+Program-Id: SAMPLE           Statement: RESET TRACE            Line: 68
+**** FAIL:   2. IT RETURNS GOODBYE, CRUEL WORLD! AS FAREWELL                                    
+    EXPECTED <GOODBYE, CRUEL WORLD!                                       >, WAS <SEE YOU LATER, ALLIGATOR!                                   >
+ 
+  2 TEST CASES WERE EXECUTED
+  1 PASSED
+  1 FAILED
+=================================================
+
