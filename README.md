@@ -69,6 +69,7 @@ Compile the program ```SAMPLE```, located at ```src/main/cobol/SAMPLE.CBL```
 
 ```sh
 ./compile SAMPLE
+./compile ZUTZCPC
 ```
 
 Run the unit tests for ```SAMPLE```. Configuration file is ```src/test/resources/SAMPLEC``` and unit tests are in ```src/test/cobol/unit-tests/SAMPLET```.
